@@ -1,0 +1,9 @@
+# ignore all
+*
+
+# exclude - folders
+!lib/
+
+# exclude - files
+!autocannon.js
+!package*.json
