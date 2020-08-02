@@ -1,10 +1,5 @@
-FROM alpine:latest
+FROM node:alpine
 
-WORKDIR /app
+RUN npm i autocannon -g
 
-COPY ./ ./
-
-RUN npm i
-
-
-ENTRYPOINT ["/bin/sh", "-c", "while sleep 86400; do :; done"]
+ENTRYPOINT ["autocannon"]
